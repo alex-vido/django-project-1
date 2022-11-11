@@ -1,4 +1,3 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 
 
@@ -6,11 +5,3 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'recipes/home.html')
     # HTTP RESPONSE
-
-
-def contact(request):
-    return render(request, 'recipes/contact.html')
-
-
-def about(request):
-    return HttpResponse('About')
